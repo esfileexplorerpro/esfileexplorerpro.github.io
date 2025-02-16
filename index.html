@@ -29,6 +29,20 @@
       "operatingSystem": "Android"
     }
   </script>
+
+  <style>
+#article .space-y-4 > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+  /* Gradient Text for Headings */
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, #3b82f6, #9333ea);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+}</style>
   <style>
 /* Custom Styles */
 body {
@@ -329,5 +343,11 @@ document.getElementById('contact-form').addEventListener('submit', (e) => {
   e.preventDefault();
   alert('Thank you for your message!');
 });</script>
+
+  /* FAQ Section Styling */
+#article .space-y-4 > div {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 </body>
 </html>
